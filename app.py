@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template, session
 from database import init_db, register_user, verify_user, get_all_destinations, get_user_by_id
 import os
 
-app = Flask(__name__, template_folder='../frontend', static_folder='../frontend')
+app = Flask(__name__, template_folder='frontend', static_folder='frontend')
 app.config['SECRET_KEY'] = 'travelup-secret-key-2025'
 app.config['DATABASE'] = 'travelup.db'
 
